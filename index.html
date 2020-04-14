@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Incremental</title>
 </head>
-<script src="Main.js" charset="utf-8" type="text/javascript"></script>
 <body>
-<p id="cookiesClicked">0 Cookies Clicked</p>
-<button onclick="clickCookie()">Click Cookie</button>
-<button onclick="buyCookiesPerClick()" id="perClickUpgrade">Upgrade Finger (Currently level 1) Cost: 10</button>
+<p id="cookiesClicked" class="cookies-clicked">0 Cookies Clicked</p>
+<div id="navigateButtons">
+    <button onclick="tab('clickCookiesMenu')">Go to Click Cookies</button>
+    <button onclick="tab('shopMenu')">Go to Shop</button>
+</div>
+<div id="clickCookiesMenu">
+    <button onclick="clickCookie()">Click Cookie</button>
+</div>
+<div id="shopmenu">
+    <button onclick="buyCookiesPerClick()" id="perClickUpgrade">Upgrade Finger (Currently Level 1) Cost: 10 Gold</button>
+</div>
+<script src="main.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>
